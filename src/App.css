@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #e0eafc 0%,
+    #cfdef3 100%
+  ); /* Soft blue gradient background */
+  color: #333;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Flexbox styling for Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between title and buttons */
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixed at the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensure it stays on top */
+  padding: 15px 30px; /* Padding inside the header */
+  background-color: #264653; /* Dark teal header background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+  color: white;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/* Header Title Styling */
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  flex-shrink: 0; /* Prevents title from shrinking */
+}
+
+/* Aligning buttons to the right in the header */
+.rightButtons {
+  display: flex;
+  gap: 10px; /* Adds space between sorting buttons */
+  flex-shrink: 1; /* Allow buttons to shrink if needed */
+  max-width: 100%; /* Ensure buttons do not exceed the container width */
+}
+
+/* Common Button Styling for all buttons */
+button {
+  background-color: #2a9d8f; /* Contrasting greenish-blue button color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  white-space: nowrap; /* Prevents text from wrapping inside the buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Hover effect for buttons */
+}
+
+/* Prevent wrapping and ensure buttons stay visible */
+.rightButtons button {
+  flex-shrink: 1; /* Allow buttons to shrink on small screens */
+}
+
+/* Spacing for main content to avoid overlap with the fixed header */
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px; /* Add space for the fixed header */
+  background-color: transparent; /* Keep body background visible */
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Flexbox styling for the array container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 70vh;
+  width: 90vw;
+  background-color: #fff;
+  border: 2px solid #333;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 5px; /* Adds space around the bars */
+}
+
+/* Styles for the array bars */
+.arrayBar {
+  background-color: aquamarine;
+  margin: 0 1px;
+  width: 3px; /* Adjust the width of the bars */
+  transition: height 0.1s ease, background-color 0.1s ease;
+}
+
+.arrayBar:hover {
+  background-color: #ffa500;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #e0eafc 0%,
+    #cfdef3 100%
+  ); /* Soft blue gradient background */
+  color: #333;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Flexbox styling for Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between title and buttons */
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixed at the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensure it stays on top */
+  padding: 15px 30px; /* Padding inside the header */
+  background-color: #264653; /* Dark teal header background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+  color: white;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/* Header Title Styling */
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  flex-shrink: 0; /* Prevents title from shrinking */
+}
+
+/* Aligning buttons to the right in the header */
+.rightButtons {
+  display: flex;
+  gap: 10px; /* Adds space between sorting buttons */
+  flex-shrink: 1; /* Allow buttons to shrink if needed */
+  max-width: 100%; /* Ensure buttons do not exceed the container width */
+}
+
+/* Common Button Styling for all buttons */
+button {
+  background-color: #2a9d8f; /* Contrasting greenish-blue button color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  white-space: nowrap; /* Prevents text from wrapping inside the buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Hover effect for buttons */
+}
+
+/* Prevent wrapping and ensure buttons stay visible */
+.rightButtons button {
+  flex-shrink: 1; /* Allow buttons to shrink on small screens */
+}
+
+/* Spacing for main content to avoid overlap with the fixed header */
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px; /* Add space for the fixed header */
+  background-color: transparent; /* Keep body background visible */
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Flexbox styling for the array container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 70vh;
+  width: 90vw;
+  background-color: #fff;
+  border: 2px solid #333;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 5px; /* Adds space around the bars */
+}
+
+/* Styles for the array bars */
+.arrayBar {
+  margin: 0 1px;
+  width: 3px; /* Adjust the width of the bars */
+  transition: height 0.1s ease, background-color 0.1s ease;
+}
+
+.arrayBar:hover {
+  background-color: #ffa500;
+}
