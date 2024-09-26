@@ -1,7 +1,11 @@
 import React from "react";
 import "./App.css";
-
+import Slidebar from "./Slidebar";
+import { Slide } from "@mui/material";
 function Header(props) {
+  function onChange(value) {
+    props.maxTimeout(value);
+  }
   return (
     <div className="header">
       <button
@@ -12,17 +16,7 @@ function Header(props) {
       >
         Generate Array
       </button>
-      <div class="slidecontainer">
-        <label>Time</label>
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="50"
-          class="slider"
-          id="myRange"
-        />
-      </div>
+      <Slidebar change={onChange} />
       <div className="rightButtons">
         <button
           onClick={() => {

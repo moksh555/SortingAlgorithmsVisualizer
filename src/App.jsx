@@ -6,10 +6,14 @@ import insertionsortSort from "./insertionsortSort.js";
 import heapsortSort from "./heapsortSort.js";
 import "./App.css";
 function App() {
-  const MAX_TIMEOUT = 1;
+  const [MAX_TIMEOUT, setMaxTimeOut] = useState(3);
+
+  function maxTimeout(value) {
+    setMaxTimeOut(value);
+  }
   var startingArray = [];
   for (let i = 0; i < 300; i++) {
-    var value = Math.floor(Math.random() * (600 - 10) + 10);
+    var value = Math.floor(Math.random() * (500 - 10) + 10);
     startingArray.push(value);
   }
 
@@ -17,7 +21,7 @@ function App() {
   function generatingRandomArray() {
     var newArray = [];
     for (let i = 0; i < 300; i++) {
-      var value = Math.floor(Math.random() * (600 - 10) + 10);
+      var value = Math.floor(Math.random() * (500 - 10) + 10);
       newArray.push(value);
     }
     setArray(newArray);
@@ -119,6 +123,7 @@ function App() {
           sortingMergesort={sortingMergesort}
           sortingInsertionSort={sortingInsertionSort}
           sortingHeapSort={sortingHeapSort}
+          maxTimeout={maxTimeout}
         />
       </div>
       <div className="container">
